@@ -1,3 +1,4 @@
+## PC config
 ### Laptop 0
 ```
 IPv4: 192.168.99.2
@@ -63,6 +64,7 @@ Router#configure terminal
 Router(config)#interface GigabitEthernet0/0
 Router(config-if)#no shutdown
 
+R1(config)#int g0/0.99
 Router(config-subif)#encapsulation dot1Q 99
 Router(config-subif)#ip address 192.168.99.1 255.255.255.0
 ```
